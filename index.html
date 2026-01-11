@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> While loop, Function, Array</h1>
+    <script>
+        for(let i=0; i<=10; i++){
+            console.log(i)
+        }
+
+
+        //Function
+        function greet(){
+            console.log("Yes I am greet Called")
+        }
+        greet()
+        greet()
+        greet()
+        greet()
+        greet()
+
+        function sum(){
+            let a = 5
+            let b = 6
+            let result = a + b
+            console.log(result)
+        }
+        sum()
+        sum()
+        sum()
+        //function parameters
+        function sum(a,b){
+            let result = a + b
+            console.log(result)
+        }
+        //function arguments
+        sum(4,5)
+        sum(11,22)
+        sum(56,88)
+
+        //Make another function multiply which will take 3 paraments and multiply then
+        function multiply(num1,num2,num3){
+            let result =num1*num2*num3
+            console.log(result)
+        }
+        multiply(3,4,5)
+        //calculate percentage
+        function calculatepercentage(obtMarks,totalMarks){
+            let percentage =obtMarks * 100 /totalMarks
+            return percentage
+        }
+       let per = calculatepercentage(856,1100)
+       if (per>90){
+        console.log("Grade A")
+       }else{
+        console.log("Grade B")
+       }
+
+//retrun
+       function multiply(num1,num2,num3){
+        let result = num1*num2*num3
+        return result
+       }
+       let res = multiply(30,4,5)
+
+       if(res>100){
+        alert("invalid")
+       }else{
+        alert("valid")
+       }
+
+    </script>
+</body>
+</html>
